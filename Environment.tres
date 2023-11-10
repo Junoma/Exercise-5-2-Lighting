@@ -1,0 +1,20 @@
+[gd_resource type="Environment" load_steps=4 format=3 uid="uid://cd4hlocqi3smm"]
+
+[ext_resource type="Texture2D" uid="uid://dbg4rgsjij1gl" path="res://Assets/venice_sunset_1k.hdr" id="1_1dvup"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_txs83"]
+panorama = ExtResource("1_1dvup")
+
+[sub_resource type="Sky" id="Sky_28dvo"]
+sky_material = SubResource("PanoramaSkyMaterial_txs83")
+
+[resource]
+background_mode = 2
+background_color = Color(0.266667, 0.266667, 0.243137, 0.509804)
+sky = SubResource("Sky_28dvo")
+ambient_light_source = 3
+ambient_light_color = Color(0.372549, 0.129412, 0.85098, 1)
+ambient_light_sky_contribution = 0.5
+ambient_light_energy = 0.2
+tonemap_mode = 3
+ssr_enabled = true
